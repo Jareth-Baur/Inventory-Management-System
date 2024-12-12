@@ -133,9 +133,9 @@
     <script src="{{ asset('dist/libs/jsvectormap/dist/maps/world-merc.js') }}" defer></script>
 @endpush
 
-@pushonce('page-scripts')
+@push('page-scripts')
     <script>
-        // @formatter:off
+        @formatter:off
         document.addEventListener("DOMContentLoaded", function () {
             window.ApexCharts && (new ApexCharts(document.getElementById('chart-revenue-bg'), {
                 chart: {
@@ -197,10 +197,10 @@
                 },
             })).render();
         });
-        // @formatter:on
+        @formatter:on
     </script>
     <script>
-        // @formatter:off
+        @formatter:off
         document.addEventListener("DOMContentLoaded", function () {
             window.ApexCharts && (new ApexCharts(document.getElementById('chart-new-clients'), {
                 chart: {
@@ -259,10 +259,10 @@
                 },
             })).render();
         });
-        // @formatter:on
+        @formatter:on
     </script>
     <script>
-        // @formatter:off
+        @formatter:off
         document.addEventListener("DOMContentLoaded", function () {
             window.ApexCharts && (new ApexCharts(document.getElementById('chart-active-users'), {
                 chart: {
@@ -323,6 +323,6 @@
                 },
             })).render();
         });
-        // @formatter:on
+        @formatter:on
     </script>
-@endpushonce
+@endpush
